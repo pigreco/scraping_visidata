@@ -2,9 +2,9 @@
 
 ## ricetta_01:
 
-- Sito: https://it.wikipedia.org/wiki/Coste_italiane
-- Tabella: Coste Italiane
-- tag: table.wikitable
+- **Sito:** https://it.wikipedia.org/wiki/Coste_italiane
+- **Tabella**: Coste Italiane
+- **classes**: table.wikitable
 
 ### script
 
@@ -13,6 +13,7 @@ curl "https://it.wikipedia.org/wiki/Coste_italiane" | scrape -be 'table.wikitabl
 ```
 
 ### risultato:
+Prime 10 righe
 
 ```
 +------------------------+-----------------+------------------+
@@ -33,9 +34,9 @@ curl "https://it.wikipedia.org/wiki/Coste_italiane" | scrape -be 'table.wikitabl
 
 ## ricetta_02:
 
-- Sito: https://www.tuttitalia.it/province/popolazione/
-- Tabella: Province/Città Metropolitane per popolazione 2019
-- tag: table.ut
+- **Sito**: https://www.tuttitalia.it/province/popolazione/
+- **Tabella**: Province/Città Metropolitane per popolazione 2019
+- **classes**: table.ut
 
 ### script
 
@@ -44,6 +45,7 @@ curl "https://www.tuttitalia.it/province/popolazione/" | scrape -be 'table.ut'| 
 ```
 
 ### risultato:
+Prime 10 righe
 
 ```
 +------+-----------------------------------------+-----+-----------------------+----------------+----------------------+---------------+
@@ -64,9 +66,9 @@ curl "https://www.tuttitalia.it/province/popolazione/" | scrape -be 'table.ut'| 
 
 ## ricetta_03:
 
-- Sito: https://www.tuttitalia.it/regioni/popolazione/
-- Tabella: Regioni italiane per popolazione 2019
-- tag: table.ut
+- **Sito**: https://www.tuttitalia.it/regioni/popolazione/
+- **Tabella**: Regioni italiane per popolazione 2019
+- **classes**: table.ut
 
 ### script
 
@@ -75,6 +77,7 @@ curl "https://www.tuttitalia.it/regioni/popolazione/" | scrape -be 'table.ut'| v
 ```
 
 ### risultato:
+Prime 10 righe
 
 ```
 +------+-----------------------+-----------------------+----------------+----------------------+---------------+-----------------+
