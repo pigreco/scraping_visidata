@@ -6,13 +6,14 @@
 - Tabella: Coste Italiane
 - tag: table.wikitable
 
-## script
+### script
 
 ```
 curl "https://it.wikipedia.org/wiki/Coste_italiane" | scrape -be 'table.wikitable'| vd -f html
 ```
 
-## risultato:
+### risultato:
+
 ```
 +------------------------+-----------------+------------------+
 | Regione                | Km di costa [1] | Superficie (km²) |
@@ -36,13 +37,13 @@ curl "https://it.wikipedia.org/wiki/Coste_italiane" | scrape -be 'table.wikitabl
 - Tabella: Province/Città Metropolitane per popolazione 2019
 - tag: table.ut
 
-## script
+### script
 
 ```
 curl "https://www.tuttitalia.it/province/popolazione/" | scrape -be 'table.ut'| vd -f html
 ```
 
-## risultato:
+### risultato:
 
 ```
 +------+-----------------------------------------+-----+-----------------------+----------------+----------------------+---------------+
@@ -67,13 +68,13 @@ curl "https://www.tuttitalia.it/province/popolazione/" | scrape -be 'table.ut'| 
 - Tabella: Regioni italiane per popolazione 2019
 - tag: table.ut
 
-## script
+### script
 
 ```
 curl "https://www.tuttitalia.it/regioni/popolazione/" | scrape -be 'table.ut'| vd -f html
 ```
 
-## risultato:
+### risultato:
 
 ```
 +------+-----------------------+-----------------------+----------------+----------------------+---------------+-----------------+
