@@ -9,7 +9,7 @@
 ### script
 
 ```
-curl "https://it.wikipedia.org/wiki/Coste_italiane" | scrape -be 'table.wikitable'| vd -f html
+curl -L "https://it.wikipedia.org/wiki/Coste_italiane" | scrape -be 'table.wikitable'| vd -f html
 ```
 
 ### risultato:
@@ -41,7 +41,7 @@ Prime 10 righe
 ### script
 
 ```
-curl "https://www.tuttitalia.it/province/popolazione/" | scrape -be 'table.ut'| vd -f html
+curl -L "https://www.tuttitalia.it/province/popolazione/" | scrape -be 'table.ut'| vd -f html
 ```
 
 ### risultato:
@@ -73,7 +73,7 @@ Prime 10 righe
 ### script
 
 ```
-curl "https://www.tuttitalia.it/regioni/popolazione/" | scrape -be 'table.ut'| vd -f html
+curl -L "https://www.tuttitalia.it/regioni/popolazione/" | scrape -be 'table.ut'| vd -f html
 ```
 
 ### risultato:
