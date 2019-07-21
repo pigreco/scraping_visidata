@@ -95,3 +95,43 @@ Prime 10 righe
 | 13.  | Marche                | 1.525.271             | 9.401,38       | 162                  | 228           | 5               |
 +------+-----------------------+-----------------------+----------------+----------------------+---------------+-----------------+
 ```
+
+## ricetta_04:
+
+- **Sito**: https://www.tuttitalia.it/statistiche/cittadini-stranieri-2018/
+- **Tabella**: Cittadini stranieri in Italia - 2018
+- **classes**: table.ip
+
+### script
+
+```
+curl -L "https://www.tuttitalia.it/statistiche/cittadini-stranieri-2018/" | scrape -be 'table.ip' | vd -f html
+```
+oppure:
+
+```
+curl -L "https://www.tuttitalia.it/statistiche/cittadini-stranieri-2018/" | scrape -be '//table[contains(@class, 'ip')]' | vd -f html
+```
+
+### risultato:
+Il sito web ha otto tabelle
+
+![screen](./imgs/scraping_01.png)
+
+### scaricare la prima tabella
+
+```
+curl -L "https://www.tuttitalia.it/statistiche/cittadini-stranieri-2018/" | scrape -be '//table[contains(@class, 'ip')][1]' | vd -f html
+```
+
+oppure:
+
+```
+curl -L "https://www.tuttitalia.it/statistiche/cittadini-stranieri-2018/" | scrape -be '//table[.//th/b[contains(., "EUROPA")]]' | vd -f html
+```
+
+### scaricare la tabella con 55 righe
+
+```
+curl -L "https://www.tuttitalia.it/statistiche/cittadini-stranieri-2018/" | scrape -be '//table[count(tr)=56]' | vd -f html
+```
